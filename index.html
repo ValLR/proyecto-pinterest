@@ -6,31 +6,57 @@
 	<script src="https://use.fontawesome.com/477be0bbd3.js"></script>
 	<title>Proyecto Pinterest</title>
 	<link rel="stylesheet" href="dist/css/style.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
 	<link rel="icon" href="dist/img/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 	<nav class="menu flex-container">
-		<div class="inicio">
-			<img src="dist/img/favicon.ico" alt="" class="icon">
-			<p class="nav-text">Inicio</p>
+		<div id="inicio" class="nav-item">
+			<img class="nav-item" src="dist/img/favicon.ico" alt="" id="icon">
+			<p class="nav-item nav-text">Inicio</p>
 		</div>
-		<div class="box">
-  			<div class="container-1">
+		<div class="box nav-item">
+  			<div class="container-search nav-item">
       			<span class="icon"><i class="fa fa-search"></i></span>
-      			<input type="search" id="search" placeholder="Buscar..." />
-      			<span class="icon"><i class="fa fa-times" aria-hidden="true"></i></span>
+      			<input type="search" id="search" value="wedding"/>
+      			<span class="icon"><a href="#!" class="icon-link"><i class="fa fa-times" aria-hidden="true"></i></a></span>
   			</div>
-  			<div class="select-box">
+  			<div class="select-box nav-item nav-item">
   				<select name="pins-option" id="pins-option">
   					<option selected value="1">Todos los Pines</option>
-  					<option value="2">Más populares</option>
-  					<option value="3"></option>
+  					<option value="2">Pines más populares</option>
+  					<option value="3">Pine mas nuevos</option>
   				</select>
   			</div>
-
-		</div>
+  		</div>
+  		<div class="user nav-item">
+  			<img src="dist/img/pp.jpg" alt="" class="nav-item avatar">
+  			<p class="nav-text nav-item">Valentina</p>
+  		</div>
+  		<div class="icon-box nav-item">
+  			<div class="menu-container nav-item"><a href="" class="icon-link nav-item"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
+  			<div class="chat-container nav-item"><a href="" class="icon-link"><i class="fa fa-commenting" aria-hidden="true"></a></i></div>
+  		</div>
 	</nav>
 	<hr>
-	
+  <section class="sub-header">
+    <div class="button-container">
+      <a href="#" id="dr">Drees</a>
+      <a href="#" id="snm">San Miguel de Allende</a>
+      <a href="#" id="frik">Friki</a>
+      <a href="#" id="Invit">Invitaciones</a>
+      <a href="#" id="foto">Photography</a>
+      <a href="#" id="phcall">Photocall</a>
+      <a href="#" id="dam">Damas</a>
+      <a href="#" id="ilum">Ilumination</a>
+      <a href="#" id="ramo">Ramo</a>
+      <a href="#" id="souv">Souvenires</a>
+      <a href="#" id="inv">Invitación</a>
+      <a href="#" id="arrow"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></a></i>
+    </div>
+  </section>
+  <section></section>
+
+
 </body>
 </html>
