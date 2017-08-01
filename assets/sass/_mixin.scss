@@ -1,0 +1,11 @@
+@mixin reinicia(){
+	padding:0;
+	margin:0;
+	font-family: 'Lato', sans-serif;
+	width:100%;
+	overflow-x:hidden;
+}
+@mixin iconSize(){
+	width:25px;
+	height:25px
+}

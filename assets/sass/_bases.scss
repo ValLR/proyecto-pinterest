@@ -1,0 +1,14 @@
+body{
+	@include reinicia();
+	nav{
+		.nav-item{
+			display:$horizontal;
+		}
+		img{
+			@include iconSize();
+		}
+		.avatar{
+			border-radius:100%;
+		}
+	}
+}
