@@ -1,8 +1,11 @@
 body{
 	@include reinicia();
 	nav{
+		padding:10px;
 		.nav-item{
 			display:$horizontal;
+			margin:0 10px;
+			color:$grey;
 		}
 		img{
 			@include iconSize();
@@ -10,5 +13,84 @@ body{
 		.avatar{
 			border-radius:100%;
 		}
+		.inicio{
+			padding:20px 40px;
+			margin: 10px 10px;
+		}
+		a{
+			color:$grey;
+		}
+		.box{
+			padding:10px 20px;
+			border-radius:2%;
+			background-color:$darkGrey;
+			#search{
+				width:46%;
+				height:30px;
+				border: 1px solid $transparent;
+				background-color:$darkGrey;
+			}
+			#pins-option{
+				background-color:$darkGrey;
+				border:1px solid $transparent;
+				font-weight:bolder;
+				width:10%;
+			}
+			select:hover{
+				cursor:pointer;
+			}
+		}
 	}
+	.sub-header{
+		text-align:center;
+		margin-top:60px;
+		.button-container{
+			float:left;
+				a{
+					text-decoration:none;
+					@include botones();
+				}
+				#dr{
+					background-color:#A1938A;
+				}
+				#snm{
+					background-color:#9E6850;
+				}
+				#frik{
+					background-color:#A8948B;
+				}
+				#Invit{
+					background-color:#86715E;
+				}
+				#foto{
+					background-color:#535353;
+				}
+				#phcall{
+					background-color:#655D5A;
+				}
+				#dam{
+					background-color:#A8856F;
+				}
+				#ilum{
+					background-color:#3E2710;
+				}
+				#ramo{
+					background-color:#C2866E;
+				}
+				#souv{
+					background-color:#7D634C;
+				}
+				#inv{
+					background-color:#C2BFC0;
+				}
+		}
+		.arrow-container{
+			i{
+					font-size:20px;
+					font-weight:bolder;
+					color:#B4B4B4;
+				}			
+		}
+	}
+
 }

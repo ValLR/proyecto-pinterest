@@ -4,8 +4,16 @@
 	font-family: 'Lato', sans-serif;
 	width:100%;
 	overflow-x:hidden;
+	background-color:$background;
+	font-size:bolder;
 }
 @mixin iconSize(){
 	width:25px;
-	height:25px
+	height:25px;
+}
+@mixin botones(){
+	border-radius:5px;
+	color:$background;
+	padding:13px;
+	margin:5px;
 }
