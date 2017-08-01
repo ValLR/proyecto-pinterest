@@ -1,4 +1,3 @@
-/*Dependencias*/
 var gulp = require("gulp");
 var	concat = require("gulp-concat");
 var	uglify = require("gulp-uglify");
@@ -6,7 +5,6 @@ var sass = require("gulp-sass");
 var minifyCSS = require("gulp-minify-css");
 var webserver = require("gulp-webserver");
 
-/*Configuración de la tarea 'gulpie'*/
 gulp.task("script",function(){
 	gulp.src(["node_modules/jquery/dist/jquery.js", "node_modules/materialize-css/dist/js/materialize.js", "assets/js/*.js"])
 	.pipe(concat("script.js"))
@@ -25,7 +23,7 @@ gulp.task("style",function(){
 
 /*Configuración de la tarea 'webserver'*/
 gulp.task("webserver", function(){
-	gulp.src("../gulpie/")
+	gulp.src("../proyecto-pinterest/")
 		.pipe(webserver({
 		fallback: "index.html",
 		livereload: true,
