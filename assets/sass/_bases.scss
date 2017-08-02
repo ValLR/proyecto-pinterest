@@ -92,4 +92,39 @@ body{
 				}			
 		}
 	}
+	.pinterest-container{
+		margin-top:130px;
+		#json-content{
+			width:100%;
+			margin:15px 30px 15px 40px;
+			.elemento{
+				display:$horizontal;
+				width:220px;
+				background:transparent;
+				float:left;
+				margin-right:15px;
+				margin-bottom:15px;
+				box-shadow:0 2px 0 rgba(0,0,0,0.2);
+				h3{
+					font-weight:bolder;
+					padding-left:10px;
+					color:$titulos;
+				}		
+				p{
+					padding:10px;
+					font-size:13px;
+					color:$cuerpo;
+				}
+				img{
+					width:100%;
+					border-radius:20%;
+				}
+				a{
+					text-decoration:none;
+					color:$cuerpo;
+					font-weight:bold;
+				}
+			}
+		}
+	}
 }
