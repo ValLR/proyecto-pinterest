@@ -99,6 +99,7 @@ body{
 			width: 25%;
 			&:hover{
 				opacity:0.5;
+				cursor:pointer;
 			}
 
 
@@ -151,11 +152,39 @@ body{
 		    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 		    /* Modal Content/Box */
 			.modal-content {
-			    background-color: #fefefe;
+			    background-color:$background;
 			    margin: 15% auto; /* 15% from the top and centered */
 			    padding: 20px;
 			    border: 1px solid #888;
 			    width: 80%; /* Could be more or less, depending on screen size */
+			    .left{
+			    	text-align:left;
+			    	margin-top:50px;
+					margin-left:50px;
+
+			    }
+			    .right{
+			    	text-align:right;
+			    	margin-top:-20px;
+			    	margin-right:50px;
+			    }
+			    button{
+			    	border: 1px solid transparent;
+			    	padding:10px;
+			    	border-radius:5%;
+			    }
+			    .save{
+			    	background-color:$red;
+			    	color:$background;
+			    }
+			    .out{
+			    	color:$icon;
+			    	font-weight:bold;
+			    	margin:0 3px;
+			    }
+			    fa{
+			    	margin:0 5px;
+			    }
 				/* The Close Button */
 				.close {
 				    color: #aaa;
