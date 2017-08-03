@@ -116,16 +116,16 @@ body{
 						border-radius: 20%;
 						width:100%;
 					}
-					.pinterest__box--title{
+					.title{
 						color: $titulos;
 						text-align:left;
 						padding: 5px 10px;
 					}
-					.pinterest__box--description{
+					.description{
 						color:$cuerpo;
 						padding-left:10px;
 					}
-					.pinterest__box--username{
+					.username{
 						color: $cuerpo;
 						font-weight: bolder;
 					}
@@ -167,6 +167,9 @@ body{
 			    	text-align:right;
 			    	margin-top:-20px;
 			    	margin-right:50px;
+			    }
+			    .imgMod-container{
+			    	text-align:center;
 			    }
 			    button{
 			    	border: 1px solid transparent;
