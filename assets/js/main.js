@@ -2,7 +2,7 @@ $(document).ready(function(){
 	res.forEach(function(el){
 		console.log(el.image_url);
 		var pintContent =`
-		<a class= "modalC" ><div class="pinterest__contenedor">
+		<a id="`+ el.id +`" class= "modalC" ><div class="pinterest__contenedor">
 			<div class="pinterest__box">
 				<img id="`+ el.id +`" src="dist/img/`+ el.id +`.jpg">
 				<h3 class="pinterest__box--title">`+ el.title +`</h3>
@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 		$(".modalC").click(function(){
 			var id = $(".modalC").attr("id");
-			$("#imgMod-container").append(`<img id="`+ el.id +`" src="dist/img/`+ el.id +`.jpg">`)
+			$(".imgMod-container").append(`<img id="`+ el.id +`" src="dist/img/`+ el.id +`.jpg">`)
 			modal.style.display="block"
 		});
 		$(".close").click(function(){
