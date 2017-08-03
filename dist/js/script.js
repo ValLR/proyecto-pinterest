@@ -10257,7 +10257,8 @@ var res =[
 	"id":1,
 	"title":"Fuke zisukje bu dibas sik.",
 	"description":"Jusola mud afeafu ti mu.",
-	"user":"Ernest Barber","image_url":"1.jpg",
+	"user":"Ernest Barber",
+	"image_url":"1.jpg",
 	"username":"nerdale","hashtag":"Chic"
 },
 {
@@ -10422,15 +10423,20 @@ var res =[
 	"hashtag":"Dresses"
 },{"id":20,"title":"Ihtiz vamheket neaviva wiahu uloka.","description":"Vobu pevcurpum mimjectu demnu.","user":"Andre Jones","image_url":"20.jpg","username":"vreco","hashtag":"Dresses"},{"id":21,"title":"Zim pareih pizten evu tu.","description":"Daekdiv wewisut ze.","user":"Irene Curtis","image_url":"21.jpg","username":"vale","hashtag":"Invitations"},{"id":22,"title":"Vazi vi efde gubi evo.","description":"Gid nilvu.","user":"Bryan Little","image_url":"22.jpg","username":"nerdale","hashtag":"Ideas"},{"id":23,"title":"Uvajopwo cu ogawu dudnip heg.","description":"Birokli fapav zelsedjo lefocsu jicuge kozdof ne efi rav sevukupi ijhef ho ov mutomi gessad bowizoveg vojigtul.","user":"Tyler Horton","image_url":"23.jpg","username":"vale","hashtag":"Hippie"},{"id":24,"title":"Ges kodi cerruw nu emnuc.","description":"Idedet usubke buzti vega use va adufav lade.","user":"Brandon Roy","image_url":"24.jpg","username":"bosquedeinvierno","hashtag":"Cakes"},{"id":25,"title":"Ahu namam abo noashu bichofek.","description":"Iti bugpo sepu jugdifveb con nawkorgav fokzodac purujsa vufhal heusi riszaka fibpuja folozaejo.","user":"Nicholas Powers","image_url":"25.jpg","username":"gabrielista","hashtag":"Hairstyles"},{"id":26,"title":"Visoban depef emcajvul isodib jizu.","description":"Suosuko menasepi ufoogase cufveca ontifet fidahi tubopzom vifkooj dobuh na sezo tepguf cacocoku fenezu wozdiute.","user":"Helena Tyler","image_url":"26.jpg","username":"nadiatap","hashtag":"Photography"},{"id":27,"title":"Iha ni hocoj cicizhu umi.","description":"Desotmiz nivuhielu niv wu ze fe hancifi abidih wad ivehedeb doboguv oc rizumec.","user":"Genevieve Hall","image_url":"27.jpg","username":"dulcefru","hashtag":"Ideas"},{"id":28,"title":"Walzod vovlus le mar co.","description":"Vovfa.","user":"Rose Clayton","image_url":"28.jpg","username":"carlita","hashtag":"Hippie"},{"id":29,"title":"Ci kevvef bipolu ti oha.","description":"Cozdav im fupero oh uk sojnoh rubabe ruefediv.","user":"Calvin Fowler","image_url":"29.jpg","username":"onlyblank","hashtag":"Chic"},{"id":30,"title":"Uldujbu potre ocevi datapci cuftomho.","description":"Selpica ni kawof fi.","user":"Norman Daniel","image_url":"30.jpg","username":"yugo_opresor","hashtag":"Ceremony"},{"id":31,"title":"Win fitle duuh cijahoec oldugli.","description":"Zapo od jomgub kagjoz sa hid fesi ajlec.","user":"Alan Weber","image_url":"31.jpg","username":"bosquedeinvierno","hashtag":"Flowers"},{"id":32,"title":"Opod fic ravi hozieg bupu.","description":"Lek gomek follibmu vemazevaw fiske is vo jok tathavu punnus lahaose manum wicfev lovodo kani seiweici uzakijto abodi.","user":"Gertrude Day","image_url":"32.jpg","username":"marcia","hashtag":"Planning"},{"id":33,"title":"Nulaw iguzizlaf igiof me oh.","description":"Ditpij tare reicva kezovi eje nav ki peb vimupwe eguconaj napcuz zegsabzit peot ib safiz.","user":"Steven Osborne","image_url":"33.jpg","username":"yugo_opresor","hashtag":"Colors"},{"id":34,"title":"Duke wal ih unraksog de.","description":"Rezu fujifta suwuhtu nam ciwoidi ugeku viapeaze wab at ziz pe ra ospalwo vaco.","user":"Ruth Bowers","image_url":"34.jpg","username":"carlita","hashtag":"Wedding"},{"id":35,"title":"Zi ni siwe disepu liwevzev.","description":"Ocat hucoduka aldunte bumot heego jislias fijwupka ve.","user":"Todd Griffith","image_url":"35.jpg","username":"vreco","hashtag":"Hairstyles"},{"id":36,"title":"Ik dothi eszi se tulelu.","description":"Ditgi revsegaw suwa ihiwilfav hecera.","user":"Johnny Fisher","image_url":"36.jpg","username":"carlita","hashtag":"Dresses"},{"id":37,"title":"La wupojovi cod isi op.","description":"Ra.","user":"Elva Stephens","image_url":"37.jpg","username":"vale","hashtag":"Planning"},{"id":38,"title":"Efractij vo pomsu erulakrem mozjedfok.","description":"Jik miwu si huarute jaznuat noica iwriopi ehwosmeg mac zow te coodabom ib gunmous gambi eboco pavegip on miajuom.","user":"Irene Sparks","image_url":"38.jpg","username":"bosquedeinvierno","hashtag":"Photography"},{"id":39,"title":"Vuvil ib zap ul fefulo.","description":"Vaso nemi cu tej jiavpos zes ped abo ka lassivizi hibbite munegu adoisu cuuf.","user":"Clarence Stokes","image_url":"39.jpg","username":"onlyblank","hashtag":"Hairstyles"},{"id":40,"title":"Suzjak sunakvoc tuza zahovu sinsija.","description":"Ecruk ome su buma ruapdit wej onuawi wem pi.","user":"Minerva Welch","image_url":"40.jpg","username":"dulcefru","hashtag":"Colors"}]
 $(document).ready(function(){
-	res.slice(-20).forEach(function(el){
-		console.log(el.image_url)
-		$("#json-content").append(`
-		    <div class="elemento">
-		        <img class="pin-image" src="dist/img/`+ el.image_url +`" alt="">
-		        <h3 class="pin title">`+ el.title +`</h3>
-		        <p class="pin Description">`+ el.description +`</p>
-		        <p class="pin CreditTitle"><a href="#!" class="name">`+ el.username +`</a> desde Pinterest <a href="#!" class="hashtag">#`+ el.hashtag +`</a></p>
-		    </div>
-			`)
-	})
+	res.forEach(function(el){
+		console.log(el.image_url);
+		var pintContent =`
+		<a href="!#" class= "modalC" ><div class="pinterest__contenedor">
+			<div class="pinterest__box">
+				<img src="dist/img/`+ el.id +`.jpg">
+				<h3 class="pinterest__box--title">`+ el.title +`</h3>
+				<h5 class="pinterest__box--description">`+ el.description +`</h5>
+				<p><a class="pinterest__box--username">`+ el.username +`</a> desde Pinterest <a href="#!" class= "pinterest__box--hashtag">#`+ el.hashtag +`</a></p>
+			</div>
+		</div></a>
+
+		`
+		pintContent= $(pintContent);
+		$(".pinterest").append(pintContent);
+	});
 });

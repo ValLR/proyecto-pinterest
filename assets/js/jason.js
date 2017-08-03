@@ -3,7 +3,8 @@ var res =[
 	"id":1,
 	"title":"Fuke zisukje bu dibas sik.",
 	"description":"Jusola mud afeafu ti mu.",
-	"user":"Ernest Barber","image_url":"1.jpg",
+	"user":"Ernest Barber",
+	"image_url":"1.jpg",
 	"username":"nerdale","hashtag":"Chic"
 },
 {

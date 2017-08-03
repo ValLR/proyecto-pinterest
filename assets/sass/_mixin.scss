@@ -6,6 +6,7 @@
 	overflow-x:hidden;
 	background-color:$background;
 	font-size:bolder;
+	height:auto;
 }
 @mixin iconSize(){
 	width:25px;

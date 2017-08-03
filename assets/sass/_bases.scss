@@ -88,43 +88,41 @@ body{
 			i{
 					font-size:20px;
 					font-weight:bolder;
-					color:#B4B4B4;
+					color:whitesmoke;
 				}			
 		}
 	}
-	.pinterest-container{
-		margin-top:130px;
-		#json-content{
-			width:100%;
-			margin:15px 30px 15px 40px;
-			.elemento{
-				display:$horizontal;
-				width:220px;
-				background:transparent;
-				float:left;
-				margin-right:15px;
-				margin-bottom:15px;
-				box-shadow:0 2px 0 rgba(0,0,0,0.2);
-				h3{
-					font-weight:bolder;
-					padding-left:10px;
-					color:$titulos;
-				}		
-				p{
-					padding:10px;
-					font-size:13px;
-					color:$cuerpo;
-				}
-				img{
-					width:100%;
-					border-radius:20%;
-				}
-				a{
-					text-decoration:none;
-					color:$cuerpo;
-					font-weight:bold;
-				}
+		.pinterest__contenedor{
+			margin: 0 auto;
+			display:$disposition;
+			width: 25%;
+
+			.pinterest__box{
+				border-radius: 2px;
+				margin: 15px;
+					a{
+						text-decoration:none;
+					}
+					img{
+						border-radius: 20%;
+						width:100%;
+					}
+					.pinterest__box--title{
+						color: $titulos;
+						text-align:left;
+						padding: 5px 10px;
+					}
+					.pinterest__box--description{
+						color:$cuerpo;
+					}
+					.pinterest__box--username{
+						color: $cuerpo;
+						font-weight: bolder;
+					}
+					.pinterest__box--hashtag{
+						display:$disposition;
+					}
 			}
 		}
-	}
+
 }
